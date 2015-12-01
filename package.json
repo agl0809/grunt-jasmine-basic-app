@@ -1,6 +1,6 @@
 {
   "name": "grunt-jasmine-basic-app",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Example and guide about how to create a basic project ready to write unit tests and check validation of code",
   "main": "src/app.js",
   "scripts": {
