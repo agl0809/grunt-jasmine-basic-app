@@ -3,4 +3,7 @@ node_js:
   - "stable"
 before_install: npm install -g grunt-cli
 install: npm install
+after_success:
+ - grunt jasmine:coverage --force
+ - grunt coveralls:grunt_coveralls_real_coverage --verbose
 before_script: grunt test
