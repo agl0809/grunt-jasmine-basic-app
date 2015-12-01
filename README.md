@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate.svg?branch=develop)](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/agl0809/grunt-jasmine-boilerplate/badge.svg?branch=develop&service=github)](https://coveralls.io/github/agl0809/grunt-jasmine-boilerplate?branch=develop)
 
-Project with a Grunt build process that gets you running with:
+Project with a grunt process with:
 
 * JSHint 
 * Jasmine unit tests in a headless browser from the command line and/or in a real browser
@@ -13,9 +13,10 @@ Start by installing the required node modules:
 
 You can then run the following tasks:
 
-* `grunt test` - Run tests in the console
+* `grunt jasmine` - Run tests and in the console and code coverage statistics.
+* `grunt jasmine:coverage` - Generate code coverage report and show statistics in the console
 * `grunt jshint` - Start Jshint validation 
-* `grunt jshint:coverage` - Generate code coverage report and show stadistics in the console
+* `grunt test` - jshint + jasmine:coverage
 
 You could install dependencies manually
 
