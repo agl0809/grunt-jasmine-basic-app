@@ -1,6 +1,6 @@
 {
   "name": "grunt-jasmine-boilerplate",
-  "version": "0.3.0-0",
+  "version": "0.3.0",
   "description": "Boilerplate and guide about how to create a basic project ready to write unit tests and code coverage",
   "main": "src/Person.js",
   "scripts": {
