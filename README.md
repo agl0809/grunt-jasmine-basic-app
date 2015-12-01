@@ -1,5 +1,8 @@
 # grunt-jasmine-boilerplate
-##Steps to create a basic project ready to write unit tests and check validation of code
+[![Build Status](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate.svg?branch=develop)](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/agl0809/grunt-jasmine-boilerplate/badge.svg?branch=develop&service=github)](https://coveralls.io/github/agl0809/grunt-jasmine-boilerplate?branch=develop)
+
+##Project with a Grunt build process that gets you running test with Jasmine and controlling code coverage.
 
 ### Create a node module package and define a new package.json file
 ```bash
@@ -31,12 +34,14 @@ npm init
  }
 ```
 
-### Installing Grunt and Jshint & Jasmine & template-jasmine-istanbul grunt plugins
+### Installing Grunt plugins dependencies
 ```
 npm install grunt --save-dev
 npm install grunt-contrib-jshint --save-dev
 npm install grunt-contrib-jasmine --save-dev
 npm install grunt-template-jasmine-istanbul --save-dev
+npm install grunt-coveralls --save-dev
+
 ```
 
 ### Preparing a new Grunt project
@@ -48,6 +53,7 @@ A typical setup will involve adding two files to project: package.json and the G
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-jasmine": "^0.9.2",
+    "grunt-coveralls": "^1.0.0",
     "grunt-template-jasmine-istanbul": "^0.4.0"
   }
 ```
@@ -84,8 +90,13 @@ module.exports = function(grunt) {
                         ]
                     }
                 }
-            }
-        }             
+            }            
+        },
+        coveralls: {
+             grunt_coveralls_real_coverage: {
+                 src: 'reports/coverage/lcov.info'
+             }
+        }
     });
  
     grunt.loadNpmTasks('grunt-contrib-jshint');
