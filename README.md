@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate.svg?branch=develop)](https://travis-ci.org/agl0809/grunt-jasmine-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/agl0809/grunt-jasmine-boilerplate/badge.svg?branch=develop&service=github)](https://coveralls.io/github/agl0809/grunt-jasmine-boilerplate?branch=develop)
 
-##Project with a Grunt build process that gets you running with:
+Project with a Grunt build process that gets you running with:
 
 * JSHint 
 * Jasmine unit tests in a headless browser from the command line and/or in a real browser
